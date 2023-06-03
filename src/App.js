@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume";
+import ViewResume from "./components/ViewResume";
 
 export default function App() {
     return (
@@ -15,6 +16,7 @@ export default function App() {
             <Projects />
             <Skills />
             <Resume />
+            <ViewResume />
             <Contact />
             <Footer />
         </main>
