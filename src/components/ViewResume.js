@@ -8,19 +8,10 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 ).toString();
 
 export default function ViewResume() {
-
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
-
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-    }
-
-
     return (
         <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-            <Document file={resumePDF}>
-                <Page pageNumber={1} onLoadSuccess={onDocumentLoadSuccess} />
+            <Document onError={console.error} file={resumePDF}>
+                <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} />
             </Document>
         </div>
     );
