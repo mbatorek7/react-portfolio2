@@ -5,7 +5,9 @@ import resumePDF from '../images/updated-resume.pdf';
 export default function Resume() {
     return (
         <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-            <Document file={resumePDF}>
+            <Document file={{
+                data: resumePDF
+            }}>
                 <Page pageNumber={1} />
             </Document>
         </div>
