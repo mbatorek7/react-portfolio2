@@ -2,7 +2,7 @@ import React from "react";
 import { Document, Page, pdfjs } from 'react-pdf';
 import resumePDF from '../images/updated-resume.pdf';
 
-export default function Resume() {
+export default function ViewResume() {
     pdfjs.GlobalWorkerOptions.workerSrc = new URL(
         'pdfjs-dist/build/pdf.worker.min.js',
         import.meta.url,
