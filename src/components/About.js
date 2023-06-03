@@ -1,3 +1,5 @@
+import avatarImage from "../images/avatar.jpg"
+
 export default function About() {
     return (
         <section id="about">
@@ -40,7 +42,7 @@ export default function About() {
                     <img
                         className="object-cover object-center rounded"
                         alt="hero"
-                        src="./avatar.jpg"
+                        src={avatarImage}
                     />
                 </div>
             </div>
