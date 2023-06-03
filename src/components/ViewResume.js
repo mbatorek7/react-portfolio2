@@ -19,8 +19,8 @@ export default function ViewResume() {
 
     return (
         <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-            <Document file={resumePDF} onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={1} />
+            <Document file={resumePDF}>
+                <Page pageNumber={1} onLoadSuccess={onDocumentLoadSuccess} />
             </Document>
         </div>
     );
