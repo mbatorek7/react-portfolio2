@@ -1,0 +1,47 @@
+{
+  "name": "react-portfolio",
+  "version": "1.0.0",
+  "description": "```md\r AS AN employer looking for candidates with experience building single-page applications\r I WANT to view a potential employee's deployed React portfolio of work samples\r SO THAT I can assess whether they're a good candidate for an open position\r ```\r ## Acceptance Criteria\r ```md\r GIVEN a single-page application portfolio for a web developer\r WHEN I load the portfolio\r THEN I am presented with a page containing a header, a section for content, and a footer\r WHEN I view the header\r THEN I am presented with the developer's name and navigation with titles corresponding to different sections of the portfolio\r WHEN I view the navigation titles\r THEN I am presented with the titles About Me, Portfolio, Contact, and Resume, and the title corresponding to the current section is highlighted\r WHEN I click on a navigation title\r THEN I am presented with the corresponding section below the navigation without the page reloading and that title is highlighted\r WHEN I load the portfolio the first time\r THEN the About Me title and section are selected by default\r WHEN I am presented with the About Me section\r THEN I see a recent photo or avatar of the developer and a short bio about them\r WHEN I am presented with the Portfolio section\r THEN I see titled images of six of the developer's applications with links to both the deployed applications and the corresponding GitHub repository\r WHEN I am presented with the Contact section\r THEN I see a contact form with fields for a name, an email address, and a message\r WHEN I move my cursor out of one of the form fields without entering text\r THEN I receive a notification that this field is required\r WHEN I enter text into the email address field\r THEN I receive a notification if I have entered an invalid email address\r WHEN I am presented with the Resume section\r THEN I see a link to a downloadable resume and a list of the developer's proficiencies\r WHEN I view the footer\r THEN I am presented with text or icon links to the developer's GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) \r ```",
+  "private": true,
+  "dependencies": {
+    "@heroicons/react": "^1.0.6",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b main -d build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  },
+  "homepage": "https://mbatorek7.github.io/react-portfolio/"
+}
