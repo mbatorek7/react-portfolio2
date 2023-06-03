@@ -1,6 +1,6 @@
 import React from "react";
 import { Document, Page } from 'react-pdf';
-import resumePDF from './updated-resume.pdf';
+import resumePDF from '../images/updated-resume.pdf';
 
 export default function Resume() {
     return (
