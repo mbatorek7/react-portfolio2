@@ -7,7 +7,7 @@ export default function Footer() {
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <a href="https://flowbite.com/" class="flex items-center">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Heart-SG2001-transparent.png/1200px-Heart-SG2001-transparent.png" class="h-8 mr-3" alt="FlowBite Logo" />
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Heart-SG2001-transparent.png/1200px-Heart-SG2001-transparent.png" class="h-8 mr-3" alt="" />
                             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">M. Batorek</span>
                         </a>
                     </div>

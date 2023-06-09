@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import { tsParticles } from "tsparticles-engine";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
@@ -11,8 +12,9 @@ import Resume from "./components/Resume";
 export default function App() {
     return (
         <main className="text-gray-400 bg-gray-900 body-font">
+
             <Navbar />
-            <Resume />
+            <Contact />
             <Routes>
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />

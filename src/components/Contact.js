@@ -1,21 +1,36 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 export default function Contact() {
     return (
-        <section id="contact">
-            <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items-center">
-                <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
-                        Have any questions? Contact me here!
-                    </h1>
-                    <p className="mb-8 leading-relaxed">
-                        <ul>
-                            <li><a href="https://github.com/mbatorek7" target="_blank">Check out my GitHub here!</a></li>
-                            <li><a href="maegan.batorek@valpo.edu">Email me here!</a></li>
-                        </ul>
-                    </p>
+        <div class="container mt-5">
+            <h1>Contact Me!</h1>
+            <form class="row g-3" action="https://formsubmit.co/fbf9cfb9492c7ccafb74d9fef69d8f96" method="POST">
+
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" name="name" id="firstName" required />
                 </div>
-            </div>
-        </section>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required />
+                </div>
+                <div class="col-md-8">
+                    <label for="emailInfo" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" name="email" id="emailInfo" required />
+                </div>
+                <div class="col-md-4">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" name="phone" id="phoneNumber" placeholder="+1 (415) 867-5309" />
+                </div>
+                <div class="col-md-12">
+                    <label for="comments" class="form-label">Comments, questions?</label>
+                    <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+        </div>
     );
 }
