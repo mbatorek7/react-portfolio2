@@ -15,8 +15,8 @@ export default function App() {
         <main className="text-gray-400 bg-gray-900 body-font">
 
             <Navbar />
-            <Contact />
             <Routes>
+                <Route path="/" element={<About />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/skills" element={<Skills />} />
