@@ -1,0 +1,17 @@
+nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+li {
+	list-style: none;
+}
+
+.navLink ul {
+	display: flex;
+	gap: 20px;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 500;
+}
