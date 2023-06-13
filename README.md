@@ -36,11 +36,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
 ```
 
 ## Description
-
-
-<p align="center">
-    <a href="https://github.com/mbatorek7/react-portfolio"><img src="https://img.shields.io/badge/-See Live Site-success?style=for-the-badge"  alt="GitHub Repo" ></a>
-</p>
+I created a personal portfolio utilizing React and TailwindCSS. I deployed it to GitHub pages.
 
 ## Screenshots
 
@@ -50,9 +46,11 @@ Here is what the final product looks like and how to use it:
 ![Final product.](./assets/images/final-product.gif)
 
 ## Installation
-To clone this repo:
+No installation needed!
 
-git clone git@github.com:mbatorek7/react-portfolio.git
+<p align="center">
+    <a href="https://mbatorek7.github.io/react-portfolio2/"><img src="https://img.shields.io/badge/-See Live Site-success?style=for-the-badge"  alt="GitHub Repo" ></a>
+</p>
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
