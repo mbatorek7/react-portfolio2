@@ -22,7 +22,7 @@ export default function App() {
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/resume" element={<Resume />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/contact" element={<Success />} />
+                <Route path="/success" element={<Success />} />
             </Routes>
 
             <Footer />

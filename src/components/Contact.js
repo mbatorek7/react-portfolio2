@@ -7,7 +7,8 @@ export default function Contact() {
             <form class="row g-3" action="https://formsubmit.co/fbf9cfb9492c7ccafb74d9fef69d8f96" method="POST">
 
                 <input type="hidden" name="_captcha" value="false" />
-                <input type="hidden" name="_next" value="https://mbatorek7.github.io/react-portfolio2/success" />
+
+                <input type="hidden" name="_next" value="https://mbatorek7.github.io/success" ></input>
 
                 <div class="col-md-6">
                     <label for="firstName" class="form-label">First Name</label>
@@ -30,7 +31,7 @@ export default function Contact() {
                     <textarea class="form-control" id="comments" name="comments,&nbsp;questions" rows="3" required></textarea>
                 </div>
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary bg-blue-500 text-white rounded p-2">Submit</button>
+                    <button type="submit" class="btn btn-primary bg-blue-500 text-white rounded p-2" >Submit</button>
                 </div>
             </form>
             <div className='pt-20'></div>
