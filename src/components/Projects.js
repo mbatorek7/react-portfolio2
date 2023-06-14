@@ -1,6 +1,49 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
-import { projects } from "../data";
+
+import project1 from "../images/project-1.gif";
+import project2 from "../images/project-2.gif";
+import project3 from "../images/project-3.gif";
+import project4 from "../images/project-4.gif";
+
+const projects = [
+    {
+        id: 1,
+        title: "Team Profile",
+        subtitle: "Inquirer and Tests",
+        description:
+            "With this app, the user can easily create a team profile that can consist of manager(s), engineer(s), and intern(s). The web app created will displayed all necessary information and allow the user to email any employee that it chooses with the press of a button.",
+        image: project1,
+        link: "https://github.com/mbatorek7/team-profile",
+    },
+    {
+        id: 2,
+        title: "Note Taker",
+        subtitle: "Express",
+        description:
+            "With this application, the user can create a list of notes. Each note is displayed on the side of the screen. When the user clicks on the note, they can see the title and text that was written. The user's notes will be saved unless the user presses the delete button.",
+        image: project2,
+        link: "https://batorek-note-taker.herokuapp.com/",
+    },
+    {
+        id: 3,
+        title: "E-commerce Back End",
+        subtitle: "Object-relational mapping",
+        description:
+            "With this project, the user can get all categories, products, or tags along with related information. The user can also obtain a singular category, product, or tag by ID and they can delete or update by ID as well. The user can also create a new category, product, or tag.",
+        image: project3,
+        link: "https://github.com/mbatorek7/ORM",
+    },
+    {
+        id: 4,
+        title: "Work Day Scheduler",
+        subtitle: "Third-Party APIs",
+        description:
+            "This application is designed to let you easily manage your busy workday schedule. It allows you to see the exact date and time at the top. With that in mind, you will also be able to see which timeslots have past, which one is the present, and which timeslots are upcoming based on the colors.",
+        image: project4,
+        link: "https://mbatorek7.github.io/workday-scheduler/",
+    },
+];
 
 export default function Projects() {
     return (
@@ -19,7 +62,7 @@ export default function Projects() {
                     {projects.map((project) => (
                         <a
                             href={project.link}
-                            key={project.image}
+                            key={project.id}
                             className="sm:w-1/2 w-100 p-4">
                             <div className="flex relative">
                                 <img

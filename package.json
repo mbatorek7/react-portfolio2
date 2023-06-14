@@ -10,11 +10,9 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-pdf": "^7.0.3",
     "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
-    "tsparticles-engine": "^2.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -46,5 +44,5 @@
   "devDependencies": {
     "gh-pages": "^5.0.0"
   },
-  "homepage": "https://mbatorek7.github.io/react-portfolio2/"
+  "homepage": "https://mbatorek7.github.io/"
 }
