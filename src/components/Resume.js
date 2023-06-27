@@ -1,14 +1,7 @@
-import React, { useState } from "react";
-import { Document, Page, pdfjs } from 'react-pdf';
-import resumePDF from '../images/updated-resume.pdf';
-
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.js',
-    import.meta.url,
-).toString();
+import React from "react";
+import resume from "../images/resume.jpg";
 
 export default function Resume() {
-    const [width, setWidth] = useState(1200);
     return (
         <div className="container px-5 py-10 mx-auto text-center lg:px-40">
             <h3 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">
@@ -22,9 +15,11 @@ export default function Resume() {
             </button>
 
             <div className="container px-5 py-10 mx-auto text-center lg:px-40">
-                <Document onError={console.error} file={resumePDF}>
-                    <Page pageNumber={1} renderTextLayer={false} renderAnnotationLayer={false} scale={width > 786 ? 1.7 : 0.6} />
-                </Document>
+                <img
+                    className="object-cover object-center rounded"
+                    alt="resume"
+                    src={resume}
+                />
             </div>
         </div>
     );
