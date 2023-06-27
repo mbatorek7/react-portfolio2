@@ -15,7 +15,7 @@ export default function App() {
 
             <Navbar />
             <Routes>
-                <Route path="/" element={<About />} />
+                <Route path={"/react-portfolio2" || "/"} element={<About />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/skills" element={<Skills />} />
